@@ -71,7 +71,7 @@ function openExternalWithConfirmation(externalLink, onFinish) {
 }
 
 function navigateToDownloads() {
-    openExternalWithConfirmation("https://www.hds.mw/downloads")
+    openExternalWithConfirmation("https://www.hadescoin.com/downloads")
 }
 
 function currenciesList() {

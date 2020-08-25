@@ -70,7 +70,7 @@ deploy:
     secure: vku9qEnfo8NirxsplNRBBezWqJa1sV5eSfpt2syfwwk=
   secret_access_key:
     secure: sBTxw2gzbkQrPyMDF5OihFJ+s96yDgNgqbF1/MNmWpYMKrZwkOzIeExfW4Cp3F8B
-  bucket: builds.hds.mw
+  bucket: builds.hadescoin.com
   region: us-west-2
   unzip: false
   set_public: true

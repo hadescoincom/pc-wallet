@@ -32,7 +32,7 @@ AbstractColors {
     property color caps_warning:          "#ffffff"
 
     property string linkStyle: "<style>a:link {color: '#00f6d2'; text-decoration: none;}</style>"
-    property string explorerUrl: "https://master-net.explorer.hds.mw/"
+    property string explorerUrl: "https://master-net.explorer.hadescoin.com/"
 
     property color swapCurrencyPaneGrRight:     "#3b3b3b"
     property color swapCurrencyPaneGrLeftHDS:  "#00f6d2"

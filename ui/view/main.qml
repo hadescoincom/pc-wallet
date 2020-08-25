@@ -257,7 +257,7 @@ Rectangle {
             onClickedChanged: {
                 if (clicked) {
                     Utils.openExternalWithConfirmation(
-                        "https://www.hds.mw/#exchanges",
+                        "https://www.hadescoin.com/#exchanges",
                         function () {
                             whereToBuyControl.clicked = false;
                         });

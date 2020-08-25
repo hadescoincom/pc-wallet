@@ -6,7 +6,7 @@ See our Github releases page for versions of Hds that are currently supported: h
 
 ## Reporting a Vulnerability
 
-To report security issues send an email to security@hds.mw (not for support).
+To report security issues send an email to security@hadescoin.com (not for support).
 
 The following keys may be used to communicate sensitive information to developers:
 

@@ -618,7 +618,7 @@ deploy the key at the node you trust completely."*/
                             Layout.preferredHeight: 32
 
                             SFText {
-                                property string hdsUrl: "<a href='https://www.hds.mw/'>hds.mw</a>"
+                                property string hdsUrl: "<a href='https://www.hadescoin.com/'>hadescoin.com</a>"
                                 //% "blockchain explorer"
                                 property string explorerUrl: "<a href='%1'>%2</a>".arg(Style.explorerUrl).arg(qsTrId("explorer"))
                                 //: general settings, label for alow open external links
@@ -1147,7 +1147,7 @@ deploy the key at the node you trust completely."*/
                             font.styleName: "Bold"; font.weight: Font.Bold
                         }
                         SFText {
-                            property string hdsEmail: "<a href='mailto:support@hds.mw'>support@hds.mw</a>"
+                            property string hdsEmail: "<a href='mailto:support@hadescoin.com'>support@hadescoin.com</a>"
                             property string hdsGithub: "<a href='https://github.com/hadescoincom'>Github</a>"
                             //% "To report a problem:"
                             property string rpm0: qsTrId("settings-report-problem-message-l0")

@@ -33,7 +33,7 @@ AbstractColors {
     property color caps_warning:          "#000000"
 
     property string linkStyle: "<style>a:link {color: '#00f6d2'; text-decoration: none;}</style>"
-    property string explorerUrl: "https://explorer.hds.mw/"
+    property string explorerUrl: "https://explorer.hadescoin.com/"
 
     property color swapCurrencyPaneGrRight:     "#00458f"
     property color swapCurrencyPaneGrLeftHDS:  "#00f6d2"

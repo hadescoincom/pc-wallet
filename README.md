@@ -1,15 +1,15 @@
 
-![alt text](https://s3.eu-central-1.amazonaws.com/website-storage.hds.mw/media/homepage/scc/scc-1.jpg "Hds Logo")
+![alt text](https://s3.eu-central-1.amazonaws.com/website-storage.hadescoin.com/media/homepage/scc/scc-1.jpg "Hds Logo")
 
 ### Welcome to Hds
 
 
-HDS is a next generation scalable, confidential cryptocurrency based on an elegant and innovative [Mimblewimble protocol](https://docs.hds.mw/Mimblewimble.pdf).
+HDS is a next generation scalable, confidential cryptocurrency based on an elegant and innovative [Mimblewimble protocol](https://docs.hadescoin.com/Mimblewimble.pdf).
 
 ### ANNOUNCEMENTS
 
 
-[Download latest version](http://hds.mw/downloads)
+[Download latest version](http://hadescoin.com/downloads)
 **Double Doppler 4.0**
 
 
@@ -25,23 +25,23 @@ HDS is a next generation scalable, confidential cryptocurrency based on an elega
 ### GET STARTED
 
 
-Get Hds binaries here: http://hds.mw/downloads
+Get Hds binaries here: http://hadescoin.com/downloads
 
 If you build from source please use 'mainnet' branch\
 
 Peers:
 
-eu-nodes.mainnet.hds.mw:8100
+eu-nodes.mainnet.hadescoin.com:8100
 
-us-nodes.mainnet.hds.mw:8100
+us-nodes.mainnet.hadescoin.com:8100
 
-ap-nodes.mainnet.hds.mw:8100
+ap-nodes.mainnet.hadescoin.com:8100
 
-ap-hk-nodes.mainnet.hds.mw:8100
+ap-hk-nodes.mainnet.hadescoin.com:8100
 
-shanghai-node.mainnet.hds.mw:8100
+shanghai-node.mainnet.hadescoin.com:8100
 
-Latest documentation is here: https://documentation.hds.mw
+Latest documentation is here: https://documentation.hadescoin.com
 
 Things that make HDS special include:
 
@@ -63,7 +63,7 @@ years.
 
 ### Roadmap
 
-See Hds roadmap for 2019 on https://hds.mw
+See Hds roadmap for 2019 on https://hadescoin.com
 
 ### Community projects
 
