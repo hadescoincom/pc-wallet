@@ -1,0 +1,4 @@
+[submodule "hds"]
+	path = hds
+	url = https://github.com/hadescoincom/hds-core.git
+	branch = mainnet

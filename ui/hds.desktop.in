@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Name=Hds Wallet@HDS_DISPLAY_SUFFIX@
+Comment=Scalable confidential cryptocurrency
+Exec=/usr/bin/HdsWallet@HDS_SUFFIX_UPPER_CASE@ %U
+Icon=hds
+Terminal=false
+Type=Application
+Categories=Network
+MimeType=application/x-hds-item;
+GenericName=Hds Wallet@HDS_DISPLAY_SUFFIX@
