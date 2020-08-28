@@ -86,7 +86,7 @@ void QR::update()
         QImage encodeImage(
                 encodeImageSize, encodeImageSize, QImage::Format_ARGB32);
         encodeImage.fill(Qt::white);
-        QColor color(Qt::transparent);
+        QColor color(Qt::black);
 
         for (int i = 0; i < qrImageSize; i++)
             for (int j = 0; j < qrImageSize; j++)

@@ -48,7 +48,7 @@ ColumnLayout {
     readonly property string   currencyLabel:  HdsGlobals.getCurrencyLabel(control.currency)
 
     property string   title
-    property string   color:        Style.accent_incoming
+    property string   color:        Style.active
     property string   currColor:    Style.content_main
     property bool     hasFee:       false
     property bool     currFeeTitle: false

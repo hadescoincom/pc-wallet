@@ -17,7 +17,7 @@ ColumnLayout {
 
     TopGradient {
         mainRoot: main
-        topColor: Style.accent_incoming
+        topColor: Style.passive
     }
 
     ReceiveViewModel {
@@ -320,7 +320,6 @@ ColumnLayout {
         CustomButton {
             //% "Close"
             text:               qsTrId("general-close")
-            palette.buttonText: Style.content_main
             icon.source:        "qrc:/assets/icon-cancel-white.svg"
             onClicked:          {
                 receiveView.saveAddress();
@@ -331,9 +330,6 @@ ColumnLayout {
         CustomButton {
             //% "Copy transaction token"
             text:               qsTrId("wallet-receive-regular-copy-token")
-            palette.buttonText: Style.content_opposite
-            icon.color:         Style.content_opposite
-            palette.button:     Style.active
             icon.source:        "qrc:/assets/icon-copy.svg"
             onClicked:          {
                 HdsGlobals.copyToClipboard(viewModel.transactionToken);
@@ -347,9 +343,6 @@ ColumnLayout {
         CustomButton {
             //% "Copy transaction address"
             text:               qsTrId("wallet-receive-copy-address")
-            palette.buttonText: Style.content_opposite
-            icon.color:         Style.content_opposite
-            palette.button:     Style.active
             icon.source:        "qrc:/assets/icon-copy.svg"
             onClicked:          {
                 HdsGlobals.copyToClipboard(viewModel.receiverAddress);

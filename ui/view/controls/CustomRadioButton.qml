@@ -36,7 +36,7 @@ T.RadioButton {
         radius: width / 2
         color: "transparent"//control.down ? control.palette.light : control.palette.base
         border.width: 1 //control.visualFocus ? 2 : 1
-        border.color: Style.content_secondary //control.visualFocus ? control.palette.highlight : control.palette.mid
+        border.color: Style.content_main //control.visualFocus ? control.palette.highlight : control.palette.mid
 
         Rectangle {
             x: (parent.width - width) / 2
@@ -48,17 +48,6 @@ T.RadioButton {
             visible: control.checked
         }
     }
-
-	DropShadow {
-		anchors.fill: indicatorRect
-		radius: 7
-		samples: 9
-		color: "white"
-		source: indicatorRect
-        // TODO (roman.strilets) maybe should using control.focus property
-        // look at https://doc.qt.io/qt-5.9/qml-qtquick-controls2-control.html#visualFocus-prop
-		visible: /*control.visualFocus*/control.activeFocus
-	}
 
     contentItem: CheckLabel {
         leftPadding: control.indicator && !control.mirrored ? control.indicator.width + control.spacing : 0

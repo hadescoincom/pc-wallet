@@ -126,8 +126,8 @@ Dialog {
 			SFLabel {
 				id: addressID
 				Layout.preferredWidth: parent.width
-				font.pixelSize: 14
-				color: Style.content_secondary
+				font.pixelSize: 12
+				color: Style.gray7
                 text: addressItem ? addressItem.address : ""
 				elide: Text.ElideLeft
 				copyMenuEnabled: true
@@ -218,7 +218,7 @@ Dialog {
 				font.pixelSize: 14
 				font.styleName: "Bold"
 				font.weight: Font.Bold
-				checked: false
+				checked: true
 			}
 
 		}
@@ -371,7 +371,6 @@ Dialog {
 				//% "Cancel"
 				text: qsTrId("general-cancel")
                 icon.source: "qrc:/assets/icon-cancel.svg"
-                icon.color: Style.content_main
 				onClicked: {
                     rootControl.close();
                 }

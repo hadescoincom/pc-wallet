@@ -11,16 +11,16 @@ Item {
     property bool isUsdButtonActive:  false
     property bool isBtcButtonActive:  false
 
-    property var backgroundColor:   isOffButtonActive ? Qt.rgba(141, 161, 173, 0.1) : Qt.rgba(0, 246, 210, 0.1)
-    property var borderColor:       isOffButtonActive ? Style.content_secondary : Style.active
+    property var backgroundColor:   isOffButtonActive ? Qt.rgba(Style.grayC.r, Style.grayC.g, Style.grayC.b, 0.1) : Qt.rgba(Style.content_main.r, Style.content_main.g, Style.content_main.b, 0.1)
+    property var borderColor:       isOffButtonActive ? Style.grayC : Style.content_main
     
-    readonly property var offButtonActiveColor: Style.content_secondary
-    readonly property var usdButtonActiveColor: Style.active
-    readonly property var btcButtonActiveColor: Style.active
+    readonly property var offButtonActiveColor: Style.grayC
+    readonly property var usdButtonActiveColor: Style.content_main
+    readonly property var btcButtonActiveColor: Style.content_main
     readonly property var buttonInactiveColor: Qt.rgba(0,0,0,0)
     readonly property var offButtonActiveTextColor: Style.content_main
-    readonly property var usdButtonActiveTextColor: Style.content_opposite
-    readonly property var btcButtonActiveTextColor: Style.content_opposite
+    readonly property var usdButtonActiveTextColor: Style.passive
+    readonly property var btcButtonActiveTextColor: Style.passive
 
     states: [
         State {

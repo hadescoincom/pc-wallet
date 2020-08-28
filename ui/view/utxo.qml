@@ -35,6 +35,13 @@ ColumnLayout {
             Layout.fillWidth: true
             height: parent.height
 
+            Rectangle {
+                anchors.fill: parent
+                radius: 10
+                color: Style.table_header
+                opacity: 1
+            }
+
             ColumnLayout {
                 anchors.fill: parent
                 anchors.leftMargin: 20
@@ -60,18 +67,18 @@ ColumnLayout {
                     text: viewModel.currentHeight
                 }
             }
-
-            Rectangle {
-                anchors.fill: parent
-                radius: 10
-                color: Style.white
-                opacity: 0.1
-            }
         }
 
         Item {
             Layout.fillWidth: true
             height: parent.height
+
+            Rectangle {
+                anchors.fill: parent
+                radius: 10
+                color: Style.table_header
+                opacity: 1
+            }
 
             ColumnLayout {
                 anchors.fill: parent
@@ -101,13 +108,6 @@ ColumnLayout {
                     text: viewModel.currentStateHash
                     elide: Text.ElideRight
                 }
-            }
-
-            Rectangle {
-                anchors.fill: parent
-                radius: 10
-                color: Style.white
-                opacity: 0.1
             }
         }
     }

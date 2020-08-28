@@ -41,15 +41,6 @@ T.Slider {
         }
     }
 
-    DropShadow {
-        anchors.fill: handle
-        radius: 5
-        samples: 9
-        color: handle.color
-        source: handle
-        visible: control.visualFocus || control.hovered
-    }
-
     background: Item {
         x: control.leftPadding + (control.horizontal ? 0 : (control.availableWidth - width) / 2)
         y: control.topPadding + (control.horizontal ? (control.availableHeight - height) / 2 : 0)

@@ -41,12 +41,4 @@ T.ProgressBar {
         border.color: Style.background_second
         color: "transparent"
     }
-
-    DropShadow {
-        anchors.fill: contentItem
-        radius: 5
-        samples: 9
-        color: Style.active
-        source: contentItem
-    }
 }

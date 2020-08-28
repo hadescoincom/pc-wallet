@@ -5,7 +5,6 @@ import "."
 
 ConfirmationDialog {
     id:                       changeSettingsDialog
-    okButtonColor:            Style.active
     okButtonText:             qsTrId("general-change-settings")
     okButtonIconSource:       "qrc:/assets/icon-settings-blue.svg"
     cancelButtonIconSource:   "qrc:/assets/icon-cancel-white.svg"

@@ -20,7 +20,7 @@ ColumnLayout {
 
     TopGradient {
         mainRoot: main
-        topColor: Style.accent_incoming
+        topColor: Style.passive
     }
 
     ReceiveSwapViewModel {
@@ -579,7 +579,6 @@ please review your settings and try again"
                 CustomButton {
                     //% "Close"
                     text: qsTrId("general-close")
-                    palette.buttonText: Style.content_main
                     icon.source: "qrc:/assets/icon-cancel-white.svg"
                     onClicked: {
                         onClosed();

@@ -134,8 +134,8 @@ ColumnLayout {
                     width: 392
                     horizontalAlignment: Text.AlignHCenter
                     text: showQR.addressItem ? showQR.addressItem.address : ""
-                    color: Style.content_secondary
-                    font.pixelSize: 14
+                    color: Style.gray7
+                    font.pixelSize: 12
                     wrapMode: Text.Wrap
                     copyMenuEnabled: true
                     onCopyText: HdsGlobals.copyToClipboard(text)
@@ -157,7 +157,7 @@ ColumnLayout {
                 //: show QR dialog message, how to use this QR
                 //% "Scan this QR code or send this address to the sender over secure channel"
                 text: qsTrId("show-qr-message")
-                color: Style.content_main
+                color: Style.grayC
                 wrapMode: Text.WordWrap
                 font.pixelSize: 14
             }

@@ -18,13 +18,6 @@ ColumnLayout {
             id: icon
             anchors.horizontalCenter: parent.horizontalCenter
         }
-        DropShadow {
-            anchors.fill: icon
-            radius: 7
-            samples: 9
-            color: Style.active
-            source: icon
-        }
     }
     
     SFText {

@@ -19,7 +19,7 @@ HDS is a next generation scalable, confidential cryptocurrency based on an elega
 
 ### FOLLOW HDS 
 
-[twitter](https://twitter.com/hdsprivacy) | [medium](https://medium.com/hds-mw) | [reddit](https://www.reddit.com/r/hdsprivacy/) | [gitter](https://gitter.im/hdsprivacy/Lobby) | [bitcointalk](https://bitcointalk.org/index.php?topic=5052151.0) | [youtube](https://www.youtube.com/channel/UCddqBnfSPWibf4f8OnEJm_w?)
+[twitter](https://twitter.com/hdsprivacy) | [medium](https://medium.com/hadescoin) | [reddit](https://www.reddit.com/r/hdsprivacy/) | [gitter](https://gitter.im/hdsprivacy/Lobby) | [bitcointalk](https://bitcointalk.org/index.php?topic=5052151.0) | [youtube](https://www.youtube.com/channel/UCddqBnfSPWibf4f8OnEJm_w?)
 
 
 ### GET STARTED
@@ -31,15 +31,8 @@ If you build from source please use 'mainnet' branch\
 
 Peers:
 
-eu-nodes.mainnet.hadescoin.com:8100
-
-us-nodes.mainnet.hadescoin.com:8100
-
-ap-nodes.mainnet.hadescoin.com:8100
-
-ap-hk-nodes.mainnet.hadescoin.com:8100
-
-shanghai-node.mainnet.hadescoin.com:8100
+silicon-valley-nodes.mainnet.hadescoin.com:16668
+tokyo-nodes.mainnet.hadescoin.com:16668
 
 Latest documentation is here: https://documentation.hadescoin.com
 
@@ -110,5 +103,5 @@ See [How to build](https://github.com/hadescoincom/hds-ui/wiki/How-to-build-Hds-
 
 # Build status
 [![Build Status](https://travis-ci.org/HdsCOM/hds-ui.svg?branch=master)](https://travis-ci.org/HdsCOM/hds-ui)
-[![Build status](https://ci.appveyor.com/api/projects/status/03rat1ixbo5gt41y/branch/master?svg=true)](https://ci.appveyor.com/project/hds-mw/hds-ui/branch/master)
+[![Build status](https://ci.appveyor.com/api/projects/status/03rat1ixbo5gt41y/branch/master?svg=true)](https://ci.appveyor.com/project/hadescoin/hds-ui/branch/master)
 

@@ -43,13 +43,4 @@ ToolButton {
         opacity: control.down ? 1.0 : 0.5
         color: "transparent"// control.down || control.checked || control.highlighted || control.hovered ? control.palette.mid : control.palette.button
     }
-
-	DropShadow {
-		anchors.fill: icon
-		radius: 7
-		samples: 9
-		color: "white"
-		source: icon
-		visible: control.visualFocus || control.hovered
-	}
 }

@@ -52,16 +52,6 @@ Item  {
         visible: false
     }
 
-    DropShadow {
-        anchors.fill: led
-        radius: 5
-        samples: 9
-        color: Style.active
-        source: led
-
-        visible: led.visible
-    }
-
     states: [
         State {
             name: "normal"

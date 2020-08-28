@@ -29,15 +29,6 @@ Item {
         visible: root.turned_on
     }
 
-    DropShadow {
-        anchors.fill: led_light
-        radius: 5
-        samples: 9
-        color: Style.active
-        source: led_light
-        visible: root.turned_on
-    }
-
     MouseArea {
         anchors.fill: parent
         onClicked: root.clicked()

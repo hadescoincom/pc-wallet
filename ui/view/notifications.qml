@@ -30,9 +30,9 @@ ColumnLayout {
         Layout.alignment: Qt.AlignRight | Qt.AlignTop
         Layout.preferredHeight: 38
         Layout.bottomMargin: 10
-        palette.button: Style.background_second
+        palette.button: Style.passive
         palette.buttonText : Style.content_main
-        icon.source: "qrc:/assets/icon-cancel-white.svg"
+        icon.source: "qrc:/assets/icon-cancel-black.svg"
         //% "clear all"
         text: qsTrId('notifications-clear-all')
         visible: notificationList.model.count > 0
@@ -136,7 +136,7 @@ ColumnLayout {
                 anchors.bottomMargin: 10
                 radius: 10
                 anchors.fill: parent
-                color: (parent.isUnread) ? Style.active : Style.background_second
+                color: (parent.isUnread) ? Style.active : Style.passive
                 opacity: (parent.isUnread) ? 0.1 : 1.0
             }
 

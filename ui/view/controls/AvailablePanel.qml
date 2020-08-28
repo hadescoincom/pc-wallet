@@ -33,10 +33,10 @@ Control {
             anchors.alignWhenCentered: false
             rotation: 90
             radius:   10
-            opacity:  0.3
+            opacity:  1.0
             gradient: Gradient {
-                GradientStop { position: 0.0; color: Style.swapCurrencyPaneGrRight }
-                GradientStop { position: 1.0; color: Style.swapCurrencyPaneGrLeftHDS }
+                GradientStop { position: 0.0; color: Style.swapCurrencyPaneGrLeftHDS }
+                GradientStop { position: 1.0; color: Style.swapCurrencyPaneGrRight }
             }
         }
     }
@@ -59,7 +59,7 @@ Control {
 
         background: Rectangle {
             anchors.fill: parent
-            color:  Qt.rgba(255, 255, 255, 0.15)
+            color:  Qt.background_main
             radius: 10
         }
 
@@ -101,7 +101,7 @@ Control {
 
         background: Rectangle {
             anchors.fill: parent
-            color:  Qt.rgba(255, 255, 255, 0.15)
+            color:  Qt.background_main
             radius: 10
         }
 
@@ -205,7 +205,7 @@ Control {
             visible: parseFloat(receiving) > 0 || parseFloat(sending) > 0
 
             Rectangle {
-                color:   Qt.rgba(255, 255, 255, 0.1)
+                color:   Qt.background_main
                 width:   1
                 height:  45
             }

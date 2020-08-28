@@ -41,8 +41,8 @@ T.Switch {
         x:              control.width - width - control.rightPadding
         y:              parent.height / 2 - height / 2
         radius:         13
-        color:          (colored && control.checked) || alwaysGreen ? Qt.rgba(Style.active.r, Style.active.g, Style.active.b, 0.2): "transparent"
-        border.color:   (colored && control.checked) || alwaysGreen ? Style.active : Style.content_secondary
+        color:          (colored && control.checked) || alwaysGreen ? Qt.rgba(Style.content_main.r, Style.content_main.g, Style.content_main.b, 0.2): Qt.rgba(Style.gray7.r, Style.gray7.g, Style.gray7.b, 0.2)
+        border.color:   (colored && control.checked) || alwaysGreen ? Style.content_main : Style.gray7
 
         Rectangle {
             id:           handle
@@ -51,7 +51,7 @@ T.Switch {
             width:        parent.height - 4
             height:       parent.height - 4
             radius:       (parent.height - 4) / 2
-            color:        (colored && control.checked) || alwaysGreen ? Style.active : Style.content_secondary
+            color:        (colored && control.checked) || alwaysGreen ? Style.content_main : Style.gray7
         }
     }
 }

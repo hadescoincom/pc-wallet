@@ -779,7 +779,7 @@ QString StartViewModel::defaultPortToListen() const
 #ifdef HDS_TESTNET
     return "11005";
 #else
-    return "10005";
+    return "16668";
 #endif  // HDS_TESTNET
 }
 
@@ -788,7 +788,7 @@ QString StartViewModel::defaultRemoteNodeAddr() const
 #ifdef HDS_TESTNET
     return "127.0.0.1:11005";
 #else
-    return "127.0.0.1:10005";
+    return "127.0.0.1:16668";
 #endif // HDS_TESTNET
 }
 

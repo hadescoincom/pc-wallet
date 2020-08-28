@@ -18,7 +18,7 @@ ColumnLayout {
 
     TopGradient {
         mainRoot: main
-        topColor: Style.accent_outgoing
+        topColor: Style.passive
     }
 
     Row {
@@ -85,7 +85,6 @@ ColumnLayout {
             CustomButton {
                 //% "Close"
                 text:               qsTrId("general-close")
-                palette.buttonText: Style.content_main
                 icon.source:        "qrc:/assets/icon-cancel-white.svg"
                 onClicked:          onClosed()
             }

@@ -177,14 +177,6 @@ Rectangle {
                             color: selectedItem == index ? Style.active : Style.passive
                         }
 
-                        DropShadow {
-                            anchors.fill: indicator
-                            radius: 5
-                            samples: 9
-                            color: Style.active
-                            source: indicator
-                        }
-
     					visible: control.activeFocus
                     }
 
@@ -205,13 +197,6 @@ Rectangle {
                                 font.pixelSize: 12
                                 anchors.centerIn: counter
                             }
-                        }
-                        DropShadow {
-                            anchors.fill: counter
-                            radius: 5
-                            samples: 9
-                            source: counter
-                            color: Style.active
                         }
                     }
 
@@ -237,6 +222,8 @@ Rectangle {
         SvgImage {
             id: image
             y:  50
+			width: 38
+			height: 38
             anchors.horizontalCenter: parent.horizontalCenter
             source: "qrc:/assets/logo.svg"
             smooth: true
@@ -257,7 +244,7 @@ Rectangle {
             onClickedChanged: {
                 if (clicked) {
                     Utils.openExternalWithConfirmation(
-                        "https://www.hadescoin.com/#exchanges",
+                        "https://ex.hadescoin.com/",
                         function () {
                             whereToBuyControl.clicked = false;
                         });
@@ -280,14 +267,6 @@ Rectangle {
                     width: 4
                     height: 48
                     color: whereToBuyControl.clicked ? Style.active : Style.passive
-                }
-
-                DropShadow {
-                    anchors.fill: indicator
-                    radius: 5
-                    samples: 9
-                    color: Style.active
-                    source: indicator
                 }
 
                 visible: whereToBuyControl.activeFocus

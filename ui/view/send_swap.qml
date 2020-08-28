@@ -20,7 +20,7 @@ ColumnLayout {
 
     TopGradient {
         mainRoot: main
-        topColor: Style.accent_outgoing
+        topColor: Style.active
     }
 
     function validateCoin() {
@@ -140,7 +140,7 @@ please review your settings and try again"
                         secondCurrencyLabel:        viewModel.secondCurrencyLabel
                         readOnlyA:        true
                         multi:            false
-                        color:            Style.accent_outgoing
+                        color:            Style.active
                         currColor:        viewModel.receiveCurrency == viewModel.sendCurrency || getErrorText().length ? Style.validator_error : Style.content_main
                         error:            getErrorText()
 
@@ -378,7 +378,6 @@ please review your settings and try again"
 
                 CustomButton {
                     text:                qsTrId("general-close")
-                    palette.buttonText:  Style.content_main
                     icon.source:         "qrc:/assets/icon-cancel-white.svg"
                     onClicked:           sendSwapView.onClosed();
                 }
@@ -387,7 +386,7 @@ please review your settings and try again"
                     //% "Swap"
                     text:               qsTrId("general-swap")
                     palette.buttonText: Style.content_opposite
-                    palette.button:     Style.accent_outgoing
+                    palette.button:     Style.active
                     icon.source:        "qrc:/assets/icon-send-blue.svg"
                     enabled:            viewModel.canSend
                     onClicked: {

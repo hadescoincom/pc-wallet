@@ -252,7 +252,7 @@ Control {
 
     background: Rectangle {
         radius:  10
-        color:   Style.background_second
+        color:   Style.grayBg
     }
 
     contentItem: ColumnLayout {
@@ -855,7 +855,7 @@ fee while you have transactions in progress."
                     model: seedPhrasesElectrum
                     Rectangle {
                         id:           phraseItem
-                        border.color: seedDialogContent.canEdit ? "transparent" : Style.background_second
+                        border.color: seedDialogContent.canEdit ? "transparent" : Style.grayBg
                         color:        "transparent"
                         width:        160
                         height:       38
@@ -869,7 +869,7 @@ fee while you have transactions in progress."
                             Rectangle {
                                 Layout.leftMargin: 9
 
-                                color:  Style.background_second
+                                color:  Style.grayBg
                                 width:  20
                                 height: 20
                                 radius: 10

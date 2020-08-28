@@ -20,8 +20,8 @@ TableView {
             implicitHeight: 16
             radius: 6
             anchors.fill: parent
-            color: Style.white  //
-            opacity: 0.1
+            color: Style.active
+            opacity: 1
         }
     }
 
@@ -77,7 +77,7 @@ TableView {
             anchors.left: parent.left
             anchors.leftMargin: headerTextLeftMargin
             font.pixelSize: headerTextFontSize
-            color: tableView.sortIndicatorColumn == styleData.column ? Style.content_main : Style.content_secondary
+            color: tableView.sortIndicatorColumn == styleData.column ? Style.gray3 : Style.grayC
             font.weight: tableView.sortIndicatorColumn == styleData.column ? Font.Bold : Font.Normal
             font.family: "SF Pro Display"
             font.styleName: "Regular"

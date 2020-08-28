@@ -43,7 +43,7 @@ Item {
         anchors.left: parent.left
         width: childrenRect.width
 
-        property color color: Style.active
+        property color color: Style.content_main
         property int radius: rootControl.indicator_radius
 
         Rectangle {
@@ -71,14 +71,6 @@ Item {
             sourceSize:     Qt.size(10, 10)
             source:         "qrc:/assets/icon-trusted-node-status.svg"
             visible:        model.isConnectionTrusted
-        }
-
-        DropShadow {
-            anchors.fill: model.isConnectionTrusted ? onlineTrusted : online_rect
-            radius: 5
-            samples: 9
-            source: model.isConnectionTrusted ? onlineTrusted : online_rect
-            color: parent.color
         }
     }
 
@@ -123,7 +115,7 @@ Item {
         anchors.left: parent.indicator.right
         anchors.leftMargin: 5
         anchors.topMargin: -1
-        color: Style.content_secondary
+        color: Style.content_main
         font.pixelSize: 12
     }
     SFText {
@@ -132,7 +124,7 @@ Item {
         anchors.left: status_text.right
         anchors.leftMargin: 5
         anchors.topMargin: -1
-        color: Style.content_secondary
+        color: Style.content_main
         font.pixelSize: 12
         text: "(" + model.nodeSyncProgress + "%)"
         visible: model.nodeSyncProgress > 0 && update_indicator.visible

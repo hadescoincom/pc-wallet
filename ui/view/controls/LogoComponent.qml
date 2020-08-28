@@ -24,7 +24,7 @@ ColumnLayout
     {
         Layout.alignment: Qt.AlignHCenter
         Layout.preferredWidth: 242
-        Layout.preferredHeight: 208
+        Layout.preferredHeight: 242
         source: "qrc:/assets/start-logo.svg"
     }
 
@@ -37,7 +37,7 @@ ColumnLayout
         //% "Scalable confidential cryptocurrency"
         text: qsTrId("logo-description")
 
-        color: Style.accent_incoming
+        color: Style.content_main
         font.pixelSize: 18
         font.styleName: "Bold"; font.weight: Font.Bold
     }
@@ -48,7 +48,7 @@ ColumnLayout
         Layout.alignment: Qt.AlignHCenter
         Layout.preferredHeight: 20
         Layout.topMargin: 40
-        color: Style.content_secondary
+        color: Style.content_main
         text: themeName()
         font.pixelSize: 18
         font.styleName: "Bold"; font.weight: Font.Bold

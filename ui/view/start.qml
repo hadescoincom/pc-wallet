@@ -271,7 +271,7 @@ Item
                             SFText {
                                 Layout.alignment:    Qt.AlignHCenter
                                 font.pixelSize:      12
-                                color:               Qt.rgba(255, 255, 255, 0.3)
+                                color:               Qt.content_main
                                 text:                [qsTrId("settings-version"), HdsGlobals.version()].join(' ')
                             }
 
@@ -400,7 +400,7 @@ Item
                             SFText {
                                 Layout.alignment:    Qt.AlignHCenter
                                 font.pixelSize:      12
-                                color:               Qt.rgba(255, 255, 255, 0.3)
+                                color:               Qt.content_main
                                 text:                [qsTrId("settings-version"), HdsGlobals.version()].join(' ')
                             }
 
@@ -494,7 +494,7 @@ Item
                                 SFLabel {
                                     id: pathLabel
                                     property bool isPreferred: (viewModel.walletDBpaths && viewModel.walletDBpaths[styleData.row]) ? viewModel.walletDBpaths[styleData.row].isPreferred : false
-                                    property string preferredLabelFormat: "<style>span {color: '#00f6d2';}</style><span>%1</span>"
+                                    property string preferredLabelFormat: "<style>span {color: '#333333';}</style><span>%1</span>"
                                     //: start screen, select db for migration, best match label 
                                     //% "(best match)"
                                     property string bestMatchStr: qsTrId("start-select-db-best-match-label")
@@ -692,7 +692,7 @@ Item
                     SFText {
                         Layout.alignment:    Qt.AlignHCenter
                         font.pixelSize:      12
-                        color:               Qt.rgba(255, 255, 255, 0.3)
+                        color:               Qt.content_main
                         text:                [qsTrId("settings-version"), HdsGlobals.version()].join(' ')
                     }
 
@@ -801,7 +801,7 @@ Item
                     SFText {
                         Layout.alignment:    Qt.AlignHCenter
                         font.pixelSize:      12
-                        color:               Qt.rgba(255, 255, 255, 0.3)
+                        color:               Qt.passive
                         text:                [qsTrId("settings-version"), HdsGlobals.version()].join(' ')
                     }
 
@@ -887,7 +887,7 @@ Item
                     SFText {
                         Layout.alignment:    Qt.AlignHCenter
                         font.pixelSize:      12
-                        color:               Qt.rgba(255, 255, 255, 0.3)
+                        color:               Qt.content_main
                         text:                [qsTrId("settings-version"), HdsGlobals.version()].join(' ')
                     }
 
@@ -1026,7 +1026,7 @@ Item
                     SFText {
                         Layout.alignment:    Qt.AlignHCenter
                         font.pixelSize:      12
-                        color:               Qt.rgba(255, 255, 255, 0.3)
+                        color:               Qt.content_main
                         text:                [qsTrId("settings-version"), HdsGlobals.version()].join(' ')
                     }
 
@@ -1092,7 +1092,7 @@ Item
                                     height: 20
                                     Rectangle {
                                         color: "transparent"
-                                        border.color: Style.content_secondary
+                                        border.color: Style.section
                                         width: 20
                                         height: 20
                                         radius: 10
@@ -1101,7 +1101,7 @@ Item
                                             anchors.horizontalCenter: parent.horizontalCenter
                                             text: modelData.index + 1
                                             font.pixelSize: 10
-                                            color: Style.content_secondary
+                                            color: Style.section
                                         }
                                         visible: modelData.value.length == 0
                                     }
@@ -1122,14 +1122,6 @@ Item
                                         visible: modelData.value.length > 0
                                     }
 
-                                    DropShadow {
-                                        anchors.fill: correctPhraseRect
-                                        radius: 5
-                                        samples: 9
-                                        color: modelData.isCorrect ? Style.active : Style.validator_error
-                                        source: correctPhraseRect
-                                        visible: correctPhraseRect.visible
-                                    }
                                 }
 
                                 SFTextInput {
@@ -1203,7 +1195,7 @@ Item
                     SFText {
                         Layout.alignment:    Qt.AlignHCenter
                         font.pixelSize:      12
-                        color:               Qt.rgba(255, 255, 255, 0.3)
+                        color:               Qt.content_main
                         text:                [qsTrId("settings-version"), HdsGlobals.version()].join(' ')
                     }
 
@@ -1302,7 +1294,7 @@ Item
                     SFText {
                         Layout.alignment:    Qt.AlignHCenter
                         font.pixelSize:      12
-                        color:               Qt.rgba(255, 255, 255, 0.3)
+                        color:               Qt.content_main
                         text:                [qsTrId("settings-version"), HdsGlobals.version()].join(' ')
                     }
 
@@ -1377,7 +1369,7 @@ Item
                                             anchors.horizontalCenter: parent.horizontalCenter
                                             text: modelData.index + 1
                                             font.pixelSize: 10
-                                            color: Style.background_second
+                                            color: Style.content_main
                                         }
                                         visible: modelData.value.length == 0
                                     }
@@ -1497,7 +1489,7 @@ Item
                     SFText {
                         Layout.alignment:    Qt.AlignHCenter
                         font.pixelSize:      12
-                        color:               Qt.rgba(255, 255, 255, 0.3)
+                        color:               Qt.content_main
                         text:                [qsTrId("settings-version"), HdsGlobals.version()].join(' ')
                     }
 
@@ -1753,7 +1745,7 @@ Item
                     SFText {
                         Layout.alignment:    Qt.AlignHCenter
                         font.pixelSize:      12
-                        color:               Qt.rgba(255, 255, 255, 0.3)
+                        color:               Qt.content_main
                         text:                [qsTrId("settings-version"), HdsGlobals.version()].join(' ')
                     }
 
@@ -1953,6 +1945,7 @@ Item
                             text: qsTrId("general-back")
                             icon.source: "qrc:/assets/icon-back.svg"
                             visible: !isBadPortMode
+                            palette.buttonText: Style.passive
                             onClicked: startWizzardView.pop();
                         }
 
@@ -2027,7 +2020,7 @@ Item
                     SFText {
                         Layout.alignment:    Qt.AlignHCenter
                         font.pixelSize:      12
-                        color:               Qt.rgba(255, 255, 255, 0.3)
+                        color:               Qt.content_main
                         text:                [qsTrId("settings-version"), HdsGlobals.version()].join(' ')
                     }
 
@@ -2249,7 +2242,7 @@ Item
                             SFText {
                                 Layout.alignment:    Qt.AlignHCenter
                                 font.pixelSize:      12
-                                color:               Qt.rgba(255, 255, 255, 0.3)
+                                color:               Qt.content_main
                                 text:                [qsTrId("settings-version"), HdsGlobals.version()].join(' ')
                             }
 

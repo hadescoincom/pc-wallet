@@ -7,8 +7,8 @@ Rectangle {
     property color borderColor: Style.swapCurrencyOptionsBorder
     property int borderSize: 0
     property alias rectOpacity: rect.opacity
-    property color gradLeft: Style.swapCurrencyPaneGrLeftHDS
-    property color gradRight: Style.swapCurrencyPaneGrRight
+    property color gradLeft: Style.swapCurrencyPaneGrRight
+    property color gradRight: Style.swapCurrencyPaneGrLeftHDS
     property string currencyIcon: ""
     property var currencyIcons: []
     property color stateIndicatorColor: Style.swapCurrencyStateIndicator
@@ -39,7 +39,6 @@ Rectangle {
         anchors.alignWhenCentered: false
         rotation: 90
         radius:   10
-        opacity: 0.3
         gradient: Gradient {
             GradientStop { position: 0.0; color: gradRight }
             GradientStop { position: 1.0; color: gradLeft }

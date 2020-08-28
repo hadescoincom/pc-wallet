@@ -40,7 +40,7 @@ T.Menu {
 			icon: itemControl.icon
 			text: itemControl.text
 			font: itemControl.font
-			color: Style.content_main
+			color: itemControl.hovered ? Style.passive : Style.content_main
 			opacity: enabled ? 1.0 : 0.3
 		}
 
@@ -48,7 +48,7 @@ T.Menu {
             implicitWidth: 130
             implicitHeight: 40
             opacity: enabled ? 1 : 0.3
-            color: itemControl.hovered ? Style.accent_incoming : "transparent"
+            color: itemControl.hovered ? Style.active : "transparent"
         }
     }
 

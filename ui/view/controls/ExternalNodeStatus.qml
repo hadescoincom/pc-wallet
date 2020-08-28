@@ -34,14 +34,6 @@ Item {
             color: parent.color
             border.width: 1
         }
-
-        DropShadow {
-            anchors.fill: online_rect
-            radius: 5
-            samples: 9
-            source: online_rect
-            color: parent.color
-        }
     }
 
     states: [

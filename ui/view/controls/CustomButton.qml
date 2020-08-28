@@ -9,11 +9,9 @@ import "."
 Button {
     id: control
     
-    palette.button: Style.separator
-    palette.buttonText: Style.content_main
+    palette.button: Style.content_main
+    palette.buttonText: Style.passive
     property alias textOpacity: rect.opacity
-    property alias shadowSamples: drop_shadow.samples
-    property alias shadowRadius: drop_shadow.radius
     property bool allLowercase: !text.startsWith("I ")
 
     font { 
@@ -59,15 +57,5 @@ Button {
         
         width: control.width
         height: control.height
-    }
-
-    DropShadow {
-        id: drop_shadow
-        anchors.fill: rect
-        radius: 7
-        samples: 9
-        color: Style.content_main
-        source: rect
-        visible: control.visualFocus || control.hovered
     }
 }

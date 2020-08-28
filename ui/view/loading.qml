@@ -18,7 +18,6 @@ Item
 
     ConfirmationDialog {
         id: confirmationDialog
-        okButtonColor: Style.active
         //% "Try again"
         okButtonText: qsTrId("loading-try-again-button")
         okButtonIconSource: "qrc:/assets/icon-restore-blue.svg"
@@ -172,7 +171,7 @@ Item
                         //% "Please wait for synchronization and do not close or minimize the application."
                         text: qsTrId("loading-restore-message-line1")
                         font.pixelSize: 14
-                        color: Style.content_secondary
+                        color: Style.accent_swap
                         font.italic: true
                         visible: isRecoveryMode
                     }
@@ -186,7 +185,7 @@ Item
                             //% "Only the wallet balance (UTXO) can be restored, transaction info and addresses are always private and never kept in the blockchain."
                             text: qsTrId("loading-restore-message-line2")
                             font.pixelSize: 14
-                            color: Style.content_secondary
+                            color: Style.accent_swap
                             wrapMode: Text.Wrap
                             font.italic: true
                             visible: isRecoveryMode

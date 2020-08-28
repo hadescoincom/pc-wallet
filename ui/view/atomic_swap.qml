@@ -175,8 +175,6 @@ Item {
                     Layout.minimumWidth: 172
                     Layout.preferredHeight: 32
                     Layout.maximumHeight: 32
-                    palette.button: Style.accent_outgoing
-                    palette.buttonText: Style.content_opposite
                     icon.source: "qrc:/assets/icon-accept-offer.svg"
                     //% "Accept offer"
                     text: qsTrId("atomic-swap-accept")
@@ -195,8 +193,6 @@ Item {
                     Layout.minimumWidth: 172
                     Layout.preferredHeight: 32
                     Layout.maximumHeight: 32
-                    palette.button: Style.accent_incoming
-                    palette.buttonText: Style.content_opposite
                     icon.source: "qrc:/assets/icon-create-offer.svg"
                     //% "Create offer"
                     text: qsTrId("atomic-swap-create")
@@ -228,7 +224,6 @@ Item {
                                 .arg(viewModel.activeTxCount)
                             : "";
                     }
-                    gradLeft: Style.swapCurrencyPaneGrLeftHDS
                     currencyIcon: "qrc:/assets/icon-hds.svg"
                     amount: viewModel.hdsAvailable
                     currencySymbol: HdsGlobals.getCurrencyLabel(Currency.CurrHds)
@@ -252,7 +247,6 @@ Item {
                 }
 
                 SwapCurrencyAmountPane {
-                    gradLeft: Style.swapCurrencyPaneGrLeftBTC
                     currencyIcon: "qrc:/assets/icon-btc.svg"
                     amount: viewModel.hasBtcTx ? "" : viewModel.btcAvailable
                     currencySymbol: HdsGlobals.getCurrencyLabel(Currency.CurrBtc)
@@ -267,7 +261,6 @@ Item {
                 }
 
                 SwapCurrencyAmountPane {
-                    gradLeft: Style.swapCurrencyPaneGrLeftLTC
                     currencyIcon: "qrc:/assets/icon-ltc.svg"
                     amount: viewModel.hasLtcTx ? "" : viewModel.ltcAvailable
                     currencySymbol: HdsGlobals.getCurrencyLabel(Currency.CurrLtc)
@@ -280,7 +273,6 @@ Item {
                 }
 
                 SwapCurrencyAmountPane {
-                    gradLeft: Style.swapCurrencyPaneGrLeftQTUM
                     currencyIcon: "qrc:/assets/icon-qtum.svg"
                     amount: viewModel.hasQtumTx ? "" : viewModel.qtumAvailable
                     currencySymbol: HdsGlobals.getCurrencyLabel(Currency.CurrQtum)
@@ -294,8 +286,6 @@ Item {
 
                 SwapCurrencyAmountPane {
                     id: swapOptions
-                    gradLeft: Style.swapCurrencyPaneGrLeftOther
-                    gradRight: Style.swapCurrencyPaneGrLeftOther
                     //% "Connect other currency wallet to start trading"
                     amount: qsTrId("atomic-swap-connect-other")
                     amountWrapMode: Text.Wrap

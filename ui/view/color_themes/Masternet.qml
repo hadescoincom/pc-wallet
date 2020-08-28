@@ -4,9 +4,9 @@ AbstractColors {
     property color content_main:          "#ffffff"  // white
     property color accent_outgoing:       "#da68f5"  // heliotrope
     property color accent_incoming:       "#0bccf7"  // bright-sky-blue
-    property color accent_swap:           "#39fdf2"
+    property color accent_swap:           "#000000"
     property color accent_fail:           "#ff746b"
-    property color content_secondary:     "#8da1ad"  // bluey-grey
+    property color content_secondary:     "#ffffff"  // bluey-grey
     property color content_disabled:      "#889da9"
     property color content_opposite:      "#171717"
     property color validator_warning:     "#f4ce4a"
@@ -26,16 +26,16 @@ AbstractColors {
     property color separator:             "#353636"
     property color table_header:          "#323232"
 
-    property color active :               "#00f6d2" // bright-teal
+    property color active :               "#333333" // bright-teal
     property color passive:               "#d6d9e0"  // silver
         
     property color caps_warning:          "#ffffff"
 
-    property string linkStyle: "<style>a:link {color: '#00f6d2'; text-decoration: none;}</style>"
+    property string linkStyle: "<style>a:link {color: '#333333'; text-decoration: none;}</style>"
     property string explorerUrl: "https://master-net.explorer.hadescoin.com/"
 
     property color swapCurrencyPaneGrRight:     "#3b3b3b"
-    property color swapCurrencyPaneGrLeftHDS:  "#00f6d2"
+    property color swapCurrencyPaneGrLeftHDS:  "#333333"
     property color swapCurrencyPaneGrLeftBTC:   "#fcaf38"
     property color swapCurrencyPaneGrLeftLTC:   "#bebebe"
     property color swapCurrencyPaneGrLeftQTUM:  "#2e9ad0"

@@ -21,7 +21,7 @@ ColumnLayout {
 
     TopGradient {
         mainRoot: main
-        topColor: Style.accent_outgoing
+        topColor: Style.passive
     }
 
     SendViewModel {
@@ -206,7 +206,7 @@ ColumnLayout {
                 setMaxAvailableAmount:      function() { viewModel.setMaxAvailableAmount(); }
                 hasFee:           true
                 showAddAll:       true
-                color:            Style.accent_outgoing
+                color:            Style.active
                 error:            showInsufficientBalanceWarning
                                   //% "Insufficient funds: you would need %1 to complete the transaction"
                                   ? qsTrId("send-founds-fail").arg(Utils.uiStringToLocale(viewModel.missing))
@@ -354,7 +354,7 @@ ColumnLayout {
             //% "Send"
             text:               qsTrId("general-send")
             palette.buttonText: Style.content_opposite
-            palette.button:     Style.accent_outgoing
+            palette.button:     Style.active
             icon.source:        "qrc:/assets/icon-send-blue.svg"
             enabled:            viewModel.canSend
             onClicked: {                

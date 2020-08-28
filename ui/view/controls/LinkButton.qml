@@ -9,7 +9,7 @@ import "."
 Control {
     id: control
 
-    property string linkStyle: "<style>a:link {color: '#00f6d2'; text-decoration: none;}</style>"
+    property string linkStyle: "<style>a:link {color: '#333333'; text-decoration: none;}</style>"
     property string text
     signal   clicked
 

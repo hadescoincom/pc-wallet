@@ -11,7 +11,7 @@ ColumnLayout {
     id: settingsView
     Layout.fillWidth: true
     state: "general"
-    property string linkStyle: "<style>a:link {color: '#00f6d2'; text-decoration: none;}</style>"
+    property string linkStyle: "<style>a:link {color: '#333333'; text-decoration: none;}</style>"
 
     SettingsViewModel {
         id: viewModel
@@ -396,8 +396,8 @@ deploy the key at the node you trust completely."*/
                     id: generalBlock
                     Layout.fillWidth: true
                     radius: 10
-                    color: Style.background_second
-                    Layout.preferredHeight: 330
+                    color: Style.grayBg
+                    Layout.preferredHeight: 370
 
                     ColumnLayout {
                         anchors.fill: parent
@@ -493,12 +493,12 @@ deploy the key at the node you trust completely."*/
                                     }
                                 }
                             }
-                            visible: false  // Remove to enable language dropdown
+                            //visible: false  // Remove to enable language dropdown
                         }
                         
                         Item {
                             Layout.preferredHeight: 15
-                            visible: false  // Remove to enable language dropdown
+                            //visible: false  // Remove to enable language dropdown
                         }
 
                         RowLayout {
@@ -618,7 +618,7 @@ deploy the key at the node you trust completely."*/
                             Layout.preferredHeight: 32
 
                             SFText {
-                                property string hdsUrl: "<a href='https://www.hadescoin.com/'>hadescoin.com</a>"
+                                property string hdsUrl: "<a href='https://hadescoin.com/'>hadescoin.com</a>"
                                 //% "blockchain explorer"
                                 property string explorerUrl: "<a href='%1'>%2</a>".arg(Style.explorerUrl).arg(qsTrId("explorer"))
                                 //: general settings, label for alow open external links
@@ -662,7 +662,7 @@ deploy the key at the node you trust completely."*/
                     id: notificationsBlock
                     Layout.fillWidth: true
                     radius: 10
-                    color: Style.background_second
+                    color: Style.grayBg
                     Layout.preferredHeight: 200
                     Layout.topMargin: 20
 
@@ -733,8 +733,6 @@ deploy the key at the node you trust completely."*/
                         // Layout.leftMargin: 5
                         //% "Change wallet password"
                         text: qsTrId("general-change-pwd")
-                        palette.buttonText : "white"
-                        palette.button: Style.background_second
                         icon.source: "qrc:/assets/icon-password.svg"
                         icon.width: 16
                         icon.height: 16
@@ -754,8 +752,6 @@ deploy the key at the node you trust completely."*/
                         //: settings tab, general section, Show owner key button and dialog title
                         //% "Show owner key"
                         text: qsTrId("settings-general-require-pwd-to-show-owner-key")
-                        palette.button: Style.background_second
-                        palette.buttonText : Style.content_main
                         onClicked: {
                             //: settings tab, general section, Show owner key button and dialog title
                             //% "Show owner key"
@@ -784,8 +780,6 @@ deploy the key at the node you trust completely."*/
                     Layout.topMargin: 20
                     //% "Rescan"
                     text: qsTrId("general-rescan")
-                    palette.button: Style.background_second
-                    palette.buttonText : Style.content_main
                     icon.source: "qrc:/assets/icon-repeat-white.svg"
                     enabled: viewModel.localNodeRun && confirmRefreshDialog.canRefresh && viewModel.isLocalNodeRunning
                     onClicked: {
@@ -806,7 +800,7 @@ deploy the key at the node you trust completely."*/
                     id: nodeBlock
                     Layout.fillWidth: true
                     radius: 10
-                    color: Style.background_second
+                    color: Style.grayBg
                     Layout.preferredHeight: viewModel.localNodeRun ? 460 : (nodeAddressError.visible ? 330 : 285)
 
                     ColumnLayout {
@@ -1130,7 +1124,7 @@ deploy the key at the node you trust completely."*/
                     Layout.fillWidth: true
                     Layout.topMargin: 20
                     radius: 10
-                    color: Style.background_second
+                    color: Style.grayBg
                     Layout.preferredHeight: 270
 
                     ColumnLayout {

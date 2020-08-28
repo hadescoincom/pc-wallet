@@ -47,7 +47,7 @@ namespace
     const char* kLocalNodePort = "localnode/port";
     const char* kLocalNodePeers = "localnode/peers";
 
-    const char* kDefaultLocale = "en_US";
+    const char* kDefaultLocale = "zh_CN";
     const char* kDefaultAmountUnit = hds::wallet::usdCurrencyStr.data();
 
     const char* kNewVersionActive = "notifications/software_release";
@@ -55,7 +55,7 @@ namespace
     const char* kTxStatusActive = "notifications/tx_status";
 
     const std::map<QString, QString> kSupportedLangs { 
-        { "zh_CN", "Chinese Simplified"},
+        { "zh_CN", "简体中文"},
         { "en_US", "English" },
         { "es_ES", "Español"},
         { "be_BY", "Беларуская"},
@@ -240,7 +240,7 @@ uint WalletSettings::getLocalNodePort() const
 #ifdef HDS_TESTNET
     return m_data.value(kLocalNodePort, 11005).toUInt();
 #else
-    return m_data.value(kLocalNodePort, 10005).toUInt();
+    return m_data.value(kLocalNodePort, 16668).toUInt();
 #endif // HDS_TESTNET
 }
 

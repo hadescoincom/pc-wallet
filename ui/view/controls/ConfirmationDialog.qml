@@ -97,10 +97,8 @@ Dialog {
 
                 CustomButton {
                     id: okButton
-                    palette.button: Style.active
                     //% "Delete"
                     text: qsTrId("general-delete")
-                    palette.buttonText: Style.content_opposite
                     onClicked: {
                         confirmationHandler();
                     }
