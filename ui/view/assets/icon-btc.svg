@@ -2,7 +2,7 @@
     <defs>
         <radialGradient id="a" fx="50%" fy="50%">
             <stop offset="0%" stop-color="#A36F1E"/>
-            <stop offset="100%" stop-color="#0B2B4D"/>
+            <stop offset="100%" stop-color="#A36F1E"/>
         </radialGradient>
         <path id="b" d="M0 0h9v12H0z"/>
     </defs>
