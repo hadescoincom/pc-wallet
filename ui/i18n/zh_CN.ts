@@ -316,8 +316,8 @@
     <message id="settings-rescan-confirmation-message">
         <source>Rescan will sync transaction and UTXO data with the latest information on the blockchain. The process might take long time.</source>
         <extracomment>settings tab, confirm rescan dialog message</extracomment>
-        <translation>重新扫描会将交易和UTXO数据与区块链上的最新信息同步
-这个过程可能需要很长时间</translation>
+        <translation> 重新扫描会将交易和UTXO数据与区块链
+上的最新信息同步这个过程可能需要很长时间</translation>
     </message>
     <message id="settings-general-title">
         <source>General settings</source>
@@ -541,7 +541,7 @@
     </message>
     <message id="send-contact-placeholder">
         <source>Please specify contact or transaction token</source>
-        <translation type="unfinished">请指定交易地址或联系人</translation>
+        <translation type="unfinished">请输入Token地址或联系人</translation>
     </message>
     <message id="send-amount-label">
         <source>Amount to send</source>
@@ -1020,7 +1020,8 @@ Allow to open and proceed to the website? You can always update your choice in S
     <message id="settings-general-allow-Hdscom-label">
         <source>Allow access to %1 and %2 (to fetch exchanges and transaction data)</source>
         <extracomment>general settings, label for alow open external links</extracomment>
-        <translation>允许访问从%1到%2（获取互换及交易数据）</translation>
+        <translation>允许访问从%1到%2（获取
+互换及交易数据）</translation>
     </message>
     <message id="settings-report-problem-message-l0">
         <source>To report a problem:</source>
@@ -1296,15 +1297,15 @@ Update your settings and try again.</oldsource>
     </message>
     <message id="wallet-send-invalid-token">
         <source>Invalid swap token</source>
-        <translation type="unfinished">交换令牌无效</translation>
+        <translation type="unfinished">swap token无效</translation>
     </message>
     <message id="wallet-send-invalid-address-or-token">
         <source>Invalid wallet address</source>
-        <translation>无效的钱包地址或交换令牌</translation>
+        <translation>无效的钱包Token地址或联系人</translation>
     </message>
     <message id="general-comment-local">
         <source>Comments are local and won&apos;t be shared</source>
-        <translation>评论是本地的，不会被共享</translation>
+        <translation>该备注是本地储存的，不会被上传到网络</translation>
     </message>
     <message id="send-total-label">
         <source>Total UTXO value</source>
@@ -1324,7 +1325,7 @@ Update your settings and try again.</oldsource>
     </message>
     <message id="general-electrum">
         <source>Electrum</source>
-        <translation type="unfinished">以太坊（ETH）</translation>
+        <translation type="unfinished">Electrum轻客户端</translation>
     </message>
     <message id="swap-currency-na-message">
         <source>%1 is not connected, 
@@ -1949,7 +1950,7 @@ to complete.</oldsource>
     </message>
     <message id="select-server-automatically">
         <source>Select server automatically</source>
-        <translation type="unfinished">Select server automatically</translation>
+        <translation type="unfinished">自动选择服务器</translation>
     </message>
     <message id="settings-swap-seed-segwit-warning">
         <source>Segwit seed phrase is not supported yet.</source>
@@ -1998,7 +1999,7 @@ deploy the key at the node you trust completely.</translation>
     </message>
     <message id="general-tab">
         <source>General</source>
-        <translation type="unfinished">General</translation>
+        <translation type="unfinished">全局</translation>
     </message>
     <message id="settings-remote-node-address">
         <source>Remote node address</source>
@@ -2111,19 +2112,19 @@ deploy the key at the node you trust completely.</translation>
     </message>
     <message id="settings-notifications-title">
         <source>Notifications</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">通知设置</translation>
     </message>
     <message id="settings-notifications-version">
         <source>Wallet version</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">钱包升级提示</translation>
     </message>
     <message id="settings-notifications-news">
         <source>News</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">消息通知</translation>
     </message>
     <message id="settings-notifications-tx-status">
         <source>Transaction status</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">交易状态</translation>
     </message>
     <message id="tx-failure-fee-too-large">
         <source>Fee is too large</source>
@@ -2156,19 +2157,19 @@ deploy the key at the node you trust completely.</translation>
     <message id="settings-general-amounts-unit">
         <source>Show amounts in</source>
         <extracomment>settings tab, general section, amounts unit label</extracomment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">估值单位</translation>
     </message>
     <message id="notifications-title">
         <source>Notifications</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">消息</translation>
     </message>
     <message id="notifications-clear-all">
         <source>clear all</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">清理全部</translation>
     </message>
     <message id="notifications-empty">
         <source>There are no notifications yet.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">暂无消息</translation>
     </message>
     <message id="notifications-read">
         <source>read</source>
@@ -2245,11 +2246,11 @@ deploy the key at the node you trust completely.</translation>
     </message>
     <message id="general-exchange-rate-not-available">
         <source>Exchange rate to %1 is not available</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">%1汇率不可用</translation>
     </message>
     <message id="notification-swap-completed">
         <source>Atomic Swap offer completed</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">原子交换报价完成</translation>
     </message>
     <message id="notification-swap-hds-completed-message">
         <source>Offer &lt;b&gt;%1 HDS ➞ %2 %3&lt;/b&gt; with transaction ID &lt;b&gt;%4&lt;/b&gt; completed.</source>
