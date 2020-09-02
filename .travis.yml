@@ -249,6 +249,14 @@ after_script:
 
   # upload binaries to S3, to the latest folder
   - artifacts upload --target-paths "$TRAVIS_BRANCH/latest/$BUILD_TYPE/$OS_FOLDER/" $HOME/build/hadescoincom/pc-wallet/$HDS_WALLET_UI_OUT_VERLESS
+#
+#deploy:
+#  provider: releases
+#  api_key: "GITHUB OAUTH TOKEN"
+#  file: "FILE TO UPLOAD"
+#  skip_cleanup: true
+#  on:
+#    tags: true
 
 notifications:
   email:
