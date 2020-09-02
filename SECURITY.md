@@ -12,7 +12,7 @@ The following keys may be used to communicate sensitive information to developer
 
 | Name | Fingerprint |
 |------|-------------|
-| HdsCOM | A6C6 2C9F 5593 1860 AFF8 3BBB 997E AB9F 3DF7 F375 |
+| HadesCoinCom | A6C6 2C9F 5593 1860 AFF8 3BBB 997E AB9F 3DF7 F375 |
 | Alex Romanov | 4180 5296 741F F4C3 ADEC 3DF5 17B7 D9D7 A8FA C483 |
 
 

@@ -99,9 +99,9 @@ Here is the list of Hds related projects created by our community members but NO
 - Sync mechanism improvements
 
 
-See [How to build](https://github.com/hadescoincom/hds-ui/wiki/How-to-build-Hds-desktop-UI)
+See [How to build](https://github.com/hadescoincom/pc-wallet/wiki/How-to-build-Hds-desktop-UI)
 
 # Build status
-[![Build Status](https://travis-ci.org/HdsCOM/hds-ui.svg?branch=master)](https://travis-ci.org/HdsCOM/hds-ui)
-[![Build status](https://ci.appveyor.com/api/projects/status/03rat1ixbo5gt41y/branch/master?svg=true)](https://ci.appveyor.com/project/hadescoin/hds-ui/branch/master)
+[![Build Status](https://travis-ci.org/hadescoincom/pc-wallet.svg?branch=master)](https://travis-ci.org/hadescoincom/pc-wallet)
+[![Build status](https://ci.appveyor.com/api/projects/status/03rat1ixbo5gt41y/branch/master?svg=true)](https://ci.appveyor.com/project/hadescoin/pc-wallet/branch/master)
 
